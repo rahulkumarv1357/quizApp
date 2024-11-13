@@ -9,14 +9,12 @@
 :root {
  --white: #fff;
  --black: #000;
- --red: #f00;
- --green: #0f0;
+ --lightGreen: #9aeabc;
  --blue: #00f;
- --magenta: #f0f;
- --orange: #FFA500;
- --pink:  #FFC0CB;
- --yellow: #ff0;
- --aqua: #0ff;
+ --pink:  #FF9393;
+ --bgColor: #001e4d;
+ --black222: #222;
+ --black333: #333;
 }
 
 html {
@@ -31,5 +29,109 @@ body {
  align-items: center;
  width: 100%;
  min-height: 100vh;
- background-color: var(--white);
+ background-color: var(--bgColor);
+}
+
+.app{
+  width: 50rem;
+  max-width: 60rem;
+  background-color: var(--white);
+  margin: 0 auto;
+  padding: 3rem 4rem;
+  border-radius: 1rem;
+}
+
+.app h1{
+  font-size: 3rem;
+  color: var(--bgColor);
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid var(--black333);
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.app .quiz h2{
+  font-size: 2rem;
+  color: var(--black333);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+.option, .btn {
+  display: block;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  background-color: var(--white);
+  outline: none;
+  border: 0.15rem solid var(--black333);
+  margin: 2rem 0;
+  text-align: left;
+  border-radius: 0.5rem;
+  color: var(--black);
+  padding: 1.25rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+ 
+.option:hover:not([disabled]){
+  background-color: var(--bgColor);
+  color: var(--white);
+}
+.option:hover[disabled]{
+  cursor: no-drop;
+}
+.option.correct{
+  background-color: var(--lightGreen);
+  cursor: no-drop;
+  color: var(--white);
+}
+.option.wrong{
+  background-color: var(--pink);
+  color: var(--white);
+  cursor: no-drop;
+}
+
+.nextButton, .startQuiz{
+  background-color: var(--bgColor);
+  color: var(--white);
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s;
+  display: none;
+}
+
+.nextButton:hover, .startQuiz:hover{
+  background-color: var(--blue);
+  border: 0.2rem solid var(--blue);
+}
+
+h3{
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;
+  color: var(--black222);
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 76.8rem) {
+  html{
+    font-size: 55%;
+  }
+  .app{
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  html{
+    font-size: 50%;
+  }
+  .app{
+    padding: 1.5rem;
+    margin: 0 1.5rem;
+  }
 }
