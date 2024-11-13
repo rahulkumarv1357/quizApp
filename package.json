@@ -1,0 +1,20 @@
+{
+  "name": "quizapp",
+  "version": "1.0.0",
+  "description": "Quiz Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulkumarv1357/quizApp.git"
+  },
+  "author": "Rahul Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulkumarv1357/quizApp/issues"
+  },
+  "homepage": "https://github.com/rahulkumarv1357/quizApp#readme",
+  "keywords": []
+}
