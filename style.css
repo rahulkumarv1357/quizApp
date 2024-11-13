@@ -1,0 +1,35 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+ animation: all 0.2s ease-in-out;
+}
+
+:root {
+ --white: #fff;
+ --black: #000;
+ --red: #f00;
+ --green: #0f0;
+ --blue: #00f;
+ --magenta: #f0f;
+ --orange: #FFA500;
+ --pink:  #FFC0CB;
+ --yellow: #ff0;
+ --aqua: #0ff;
+}
+
+html {
+ font-size: 62.5%;
+ scroll-behavior: smooth;
+ overflow-x: hidden;
+}
+
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ min-height: 100vh;
+ background-color: var(--white);
+}
